@@ -22,6 +22,7 @@ from .serializers import (
 DOMAIN_NAME = 'yamdb.ru'
 EMAIL_NAME = 'userverify'
 
+
 class SignUpGetTokenViewSet(viewsets.GenericViewSet):
     queryset = User.objects.all()
     permission_classes = [permissions.AllowAny]
